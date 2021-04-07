@@ -3,12 +3,6 @@ import pandas as pd
 import astropy.coordinates as coord
 import astropy.units as u
 import matplotlib.pyplot as plt
-from math import pi
-
-
-def to_radians(deg):
-    return deg / 180 * pi
-
 
 data = pd.read_csv('../../data/star-clusters.csv', index_col=0)
 filter = data['d'] < 20000
@@ -29,8 +23,8 @@ gcs = np.array([c.transform_to(coord.Galactocentric) for c in cs])
 # Transform them into spherical coordinates
 sphs = np.array([
     [
-        to_radians(g.spherical.lon.value),
-        to_radians(g.spherical.lat.value),
+        g.spherical.lon.radian,
+        g.spherical.lat.radian,
         g.spherical.distance.value
     ]
     for g in gcs
@@ -46,8 +40,8 @@ ax1.scatter(sphs[:, 0], sphs[:, 2], s=3, c='#FFCC33')
 # Plot galactic longitude with distance from our solar system
 gxs = np.array([
     [
-        to_radians(c.galactic.l.value),
-        to_radians(c.galactic.b.value),
+        c.galactic.l.radian,
+        c.galactic.b.radian,
         c.distance.value
     ]
     for c in cs
