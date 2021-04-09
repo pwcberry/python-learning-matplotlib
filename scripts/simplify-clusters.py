@@ -5,12 +5,13 @@ source_columns = {
     'RAhour': (26, 35),
     'DEdeg': (35, 43),
     'radius': (73, 80),
-    'd': (143,151)
+    'd': (143, 151)
 }
 
 columns = [c for c in iter(source_columns.keys())]
 
-cluster_data = np.empty((0,4))
+# Initialize an empty NumPy array with 4 coloumns
+cluster_data = np.empty((0, 4))
 
 with open('../data/Milky_Way_Star_Clusters_2/catalog.dat') as source_dat:
     for row in source_dat:
@@ -22,6 +23,6 @@ with open('../data/Milky_Way_Star_Clusters_2/catalog.dat') as source_dat:
 
         cluster_data = np.append(cluster_data, [item], axis=0)
 
-df = pd.DataFrame(data=cluster_data, columns = columns)
+df = pd.DataFrame(data=cluster_data, columns=columns)
 
 df.to_csv('../data/star-clusters.csv')
