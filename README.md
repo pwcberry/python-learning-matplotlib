@@ -131,3 +131,5 @@ The data that is included in this repository is sourced from public locations on
 | `abell-galaxy-clusters-simplified.csv` | Abell Catalog of Clusters of Galaxies | [NASA - HEARSAC](https://heasarc.gsfc.nasa.gov/W3Browse/all/abell.html) |
 
 In the `scripts` folders are some of the python scripts I ran to reduce the source data into the examples found in this repo.
+
+I've found that reducing and/or transforming the data and saving it as an external resource lessens the strain on the Python interpreter when running experiments.

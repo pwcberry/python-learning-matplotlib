@@ -30,6 +30,7 @@ filter = data['TYPE'].str.contains(r'^(?:SNR|EN|PN|RN)', regex=True)
 nebulae = data[filter]
 
 print("Extracting galaxies...")
+# These are the morphological types for each galaxy
 filter = data['TYPE'].str.contains(r'^(?:E[?\d]?|C|E\+C|E\/SB0|E\/S0|E\-S0|SB?[\?0\-abcdm]{1,3}|Im|IBm|Irr|Ring\s[ABCD])(?:\/P)*$')
 galaxies = data[filter]
 
