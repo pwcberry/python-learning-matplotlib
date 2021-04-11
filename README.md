@@ -1,12 +1,14 @@
 # Python Dojo: pandas and matplotlib
 
-The code in this repository serves as an introduction to two data-oriented libraries matplotlib and pandas. It is intended to give readers a sample of the possibilities in data analysis and data visualisation that these libraries offer.
+The code in this repository serves as an introduction to two data-oriented libraries **matplotlib** and **pandas**. It is intended to give readers a sample of the possibilities in data analysis and data visualisation that these libraries offer.
 
 The libraries NumPy and AstroPy are also introduced to demonstrate the range of uses for matplotlib.
 
+What should be obtained through the analysis and visualisations of data is a compelling story.
+
 ## The Code Examples
 
-The examples are found in as Jupyter Notebooks in the folder `plots/notebooks` and are indexed in order of complexity. They can be run on any Python system that has a Jupyter server or even run inside Visual Studio Code with the Jupyter and Python extensions. Essentially, to execute code with matplotlib, the `ipykernel` module must be installed on your system.
+The examples are found in as Jupyter Notebooks in the folder `notebooks` and are indexed in order of complexity. They can be run on any Python system that has a Jupyter server or even run inside Visual Studio Code with the Jupyter and Python extensions. Essentially, to execute code with matplotlib, the `ipykernel` module must be installed on your system.
 
 If you don't have Jupyter installed, here is some information to help you get started:
 
