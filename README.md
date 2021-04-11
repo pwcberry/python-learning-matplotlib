@@ -28,6 +28,8 @@ And if the above haven't installed it, you should also:
 python -m pip install ipykernel
 ```
 
+as this is required by `matplotlib`.
+
 ## An Overview of the Libraries
 
 pandas and matplotlib are found extensively in the data science and scientific research communities. matplotlib itself is a foundation library for other, more feature-rich libraries.
