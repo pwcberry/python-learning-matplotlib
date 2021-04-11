@@ -32,9 +32,9 @@ as this is required by `matplotlib`.
 
 ## An Overview of the Libraries
 
-pandas and matplotlib are found extensively in the data science and scientific research communities. matplotlib itself is a foundation library for other, more feature-rich libraries.
+`pandas` and `matplotlib` are found extensively in the data science and scientific research communities. `matplotlib` itself is a foundation library for other, more feature-rich libraries.
 
-### NumPy
+### numpy
 
 [Website](https://numpy.org/)
 
@@ -130,6 +130,6 @@ The data that is included in this repository is sourced from public locations on
 | `stars-849.csv` | Derived from `stars.csv` | |
 | `abell-galaxy-clusters-simplified.csv` | Abell Catalog of Clusters of Galaxies | [NASA - HEARSAC](https://heasarc.gsfc.nasa.gov/W3Browse/all/abell.html) |
 
-In the `scripts` folders are some of the python scripts I ran to reduce the source data into the examples found in this repo.
+In the `scripts` folders are some of the Python scripts I ran to reduce the source data into the examples found in this repo.
 
 I've found that reducing and/or transforming the data and saving it as an external resource lessens the strain on the Python interpreter when running experiments.
