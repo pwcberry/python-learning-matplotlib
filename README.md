@@ -1,4 +1,4 @@
-# Python Dojo: pandas and matplotlib
+# Data with Python: pandas and matplotlib
 
 The code in this repository serves as an introduction to two data-oriented libraries **matplotlib** and **pandas**. It is intended to give readers a sample of the possibilities in data analysis and data visualisation that these libraries offer.
 
