@@ -10,25 +10,25 @@ What should be obtained through the analysis and visualisations of data is a com
 
 The examples are found in as Jupyter Notebooks in the folder `notebooks` and are indexed in order of complexity. They can be run on any Python system that has a Jupyter server or even run inside Visual Studio Code with the Jupyter and Python extensions. Essentially, to execute code with matplotlib, the `ipykernel` module must be installed on your system.
 
-If you don't have Jupyter installed, here is some information to help you get started:
-
-- [Anaconda](https://www.anaconda.com/products/individual)
-- [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-- [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-
 You can install the libraries needed to run the examples by running the following at the root of this repo:
 
 ```
 python -m pip install -r requirements.txt
 ```
 
-And if the above haven't installed it, you should also:
+And if the above haven't installed it, you should also run:
 
 ```
 python -m pip install ipykernel
 ```
 
 as this is required by `matplotlib`.
+
+## Starting the Jupyter server
+
+```shell
+jupyter notebook
+```
 
 ## An Overview of the Libraries
 
@@ -95,7 +95,7 @@ You can plot:
 - contour plots
 - 3d plots
 
-This is has quite a low-level API. You can control:
+This has quite a low-level API. You can control:
 
 - figure titles, including font and color
 - marker styles
@@ -120,16 +120,23 @@ A project to develop core packages for astronomy. These packages provide:
 
 The data that is included in this repository is sourced from public locations on the Internet. However, to keep this repo small, the data has been pre-processed to keep file sizes small.
 
-| File | Description | Source |
-| --- | --- | --- |
-| `Melbourne_Annual.csv` | Annual mean temperatures and total rainfalls | [Bureau of Meterology](https://www.bom.gov.au/climate/data/) |
-| `BOM_VIC_20210323.xlsx` | Daily temperatures and rainfall totals for Melbourne | [Bureau of Meterology](https://www.bom.gov.au/climate/data/) |
-| `NGC-IC.xlsx` | Objects listed in the New General Catalog and Index Catalog of non-stellar objects | Uncertain; but a starting point is [NASA - HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/all/ngc2000.html). A related project is [The NGC/IC Project](http://ngcicproject.observers.org) |
-| `star-clusters.csv` | Milky Way Star Clusters Catalog | [NASA - HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/all/mwsc.html) |
-| `stars.csv` | Star catalog derived from Hipparcos data | [VizieR - The Hipparcos Catalog](http://cdsarc.unistra.fr/viz-bin/cat/I/239) |
-| `stars-849.csv` | Derived from `stars.csv` | |
-| `abell-galaxy-clusters-simplified.csv` | Abell Catalog of Clusters of Galaxies | [NASA - HEARSAC](https://heasarc.gsfc.nasa.gov/W3Browse/all/abell.html) |
+| File                                   | Description                                                                        | Source                                                                                                                                                                                     |
+|----------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Melbourne_Annual.csv`                 | Annual mean temperatures and total rainfalls                                       | [Bureau of Meterology](https://www.bom.gov.au/climate/data/)                                                                                                                               |
+| `BOM_VIC_20210323.xlsx`                | Daily temperatures and rainfall totals for Melbourne                               | [Bureau of Meterology](https://www.bom.gov.au/climate/data/)                                                                                                                               |
+| `NGC-IC.xlsx`                          | Objects listed in the New General Catalog and Index Catalog of non-stellar objects | Uncertain; but a starting point is [NASA - HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/all/ngc2000.html). A related project is [The NGC/IC Project](http://ngcicproject.observers.org) |
+| `star-clusters.csv`                    | Milky Way Star Clusters Catalog                                                    | [NASA - HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/all/mwsc.html)                                                                                                                     |
+| `stars.csv`                            | Star catalog derived from Hipparcos data                                           | [VizieR - The Hipparcos Catalog](http://cdsarc.unistra.fr/viz-bin/cat/I/239)                                                                                                               |
+| `stars-849.csv`                        | Derived from `stars.csv`                                                           |                                                                                                                                                                                            |
+| `abell-galaxy-clusters-simplified.csv` | Abell Catalog of Clusters of Galaxies                                              | [NASA - HEARSAC](https://heasarc.gsfc.nasa.gov/W3Browse/all/abell.html)                                                                                                                    |
 
 In the `scripts` folders are some of the Python scripts I ran to reduce the source data into the examples found in this repo.
 
 I've found that reducing and/or transforming the data and saving it as an external resource lessens the strain on the Python interpreter when running experiments.
+
+## Working with Visual Studio Code
+
+There are extensions available for Visual Studio Code to make working with Python and Jupyter Notebooks easier:
+
+- [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
